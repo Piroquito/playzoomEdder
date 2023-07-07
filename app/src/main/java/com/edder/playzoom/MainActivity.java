@@ -2,7 +2,9 @@ package com.edder.playzoom;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,22 +14,22 @@ import com.edder.playzoom.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnGetStarted;
-
+    //private Button btnGetStarted;
     private ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding= ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.btnGetStarted.setOnClickListener(v -> {
-            Toast.makeText(this, "Comenzar", Toast.LENGTH_SHORT).show();
+        binding.btnGetStarted.setOnClickListener(v->{
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         });
-        binding.txtMoview.setText("Mira tu pelicula \n favoria ");
+        binding.txtMoview.setText("Mira tu pelicula\nfavorita.");
 
-      //  btnGetStarted = findViewById(R.id.btn_get_started);
-       // btnGetStarted.setOnClickListener(view -> {
-        //    Toast.makeText(this, "Comenzar", Toast.LENGTH_SHORT).show();
-      //  });
+
+
     }
 }
