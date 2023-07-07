@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 import com.edder.playzoom.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         });
         binding.txtMoview.setText("Mira tu pelicula\nfavorita.");
 
+        //////////////
 
 
+        }
     }
-}

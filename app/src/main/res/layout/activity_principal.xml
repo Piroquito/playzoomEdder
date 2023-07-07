@@ -16,16 +16,16 @@
             android:id="@+id/tb_filmfieber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/md_theme_dark_background"
             android:elevation="8dp"
-            app:titleTextColor="@color/md_theme_dark_errorContainer"
-            android:background="@color/md_theme_dark_errorContainer">
+            app:titleTextColor="@color/md_theme_dark_background">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="?attr/colorOnPrimary"
                 android:fontFamily="@font/titillium_web"
-                android:text="Pagina principal" />
+                android:text="Pagina principal"
+                android:textColor="?attr/colorOnPrimary" />
         </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
